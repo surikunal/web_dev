@@ -1,0 +1,312 @@
+/*------------- DEFAULT ---------------*/
+nav, header, footer {
+   display: block;
+}
+
+body {
+   line-height: 1;
+   margin: 0;
+}
+
+label {
+   font-size: 35px;
+   font-weight: 600;
+}
+
+p {
+   font-size: 28px;
+   line-height: 1.2;
+}
+
+article p {
+   font-size: 35px;
+   padding: 20px;
+}
+
+.container {
+   width: 100%;
+   margin: auto;
+   padding-top: 4%;
+   padding-bottom: 4%;
+}
+
+.row {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+/*   line-height: 100px;*/
+}
+
+.row::after {
+   display: table;
+   clear: both;
+   content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+   box-sizing: border-box;
+}
+
+/*------------ CUSTOM STYLE -----------*/
+
+#section-1-gradient {
+   background: #2eb8b8;
+   background: -webkit-linear-gradient(#2eb8b8, #70dbdb);
+   background: -o-linear-gradient(#2eb8b8, #70dbdb);
+   background: -moz-linear-gradient(#2eb8b8, #70dbdb);
+   background: linear-gradient(#2eb8b8, #70dbdb);
+}
+
+div.box {
+   text-align: center;
+   margin: 24px;
+   padding: 36px 24px 40px 24px;
+   border-radius: 10px;
+   background-color: #fff;
+   box-shadow: 0px 0px 0px 1px rgba(0,0,0,.15),
+      0 2px 3px 0 rgba(0, 0, 0, .1);      
+}
+
+div.coderIcon img {
+   display: block;
+   margin: auto;
+   box-shadow: -2px/*Hori*/ -2px/*Vert*/ 20px/*Blur*/ 2px/*Spread*/ rgba(0/*Shadow*/, 0/*backColor*/, 0/*boxColor*/, .15/*opacity*/), 2px 2px 17px 2px rgba(0, 0, 0, 1);
+}
+
+button {
+   font-size: 32px;
+   font-weight: 700;
+   color: #fff;
+   background-color: #0069ff;
+   padding: 15px 60px;
+   display: block;
+   text-align: center;
+   margin: 5px;
+   border-radius: 7px;
+}
+
+button.learnMore {
+   display: block;
+   margin: auto;
+}
+
+div.icon {
+   width: 100%;
+}
+
+div.leftSide-col {
+   margin-left: 15%;
+}
+
+div.rightSide-col {
+   margin-left: 0%;
+}
+
+h1.large {
+   color: #fff;
+   font-size: 56px;
+   margin: 0;
+   line-height: 70px;
+}
+
+h1.section2header {
+   font-size: 55px;
+   text-align: center;
+}
+
+h2.section3header {
+   font-size: 45px;
+   text-align: center;
+}
+
+form h2 {
+   color: #fff;
+   line-height: 10%;
+}
+
+input[type="text"] {
+   font-size: 20px;
+   width: 400px;
+   min-width: 100px;
+   padding: 5px;
+   border-radius: 10px;
+}
+
+/*-------------- NAV BAR --------------*/
+
+nav {
+   width: 100%;
+   margin: 0;
+}
+
+nav ul {
+   background-color: #eee;
+   overflow: hidden;
+   margin: 0;
+   padding: 0;
+}
+
+ul.topnav li{
+   list-style: none;
+   float: left;
+}
+
+ul.topnav li.topnav-right {
+   float: right;
+}
+
+ul.topnav li a {
+   display: block;
+   text-decoration: none;
+   min-height: 16px;
+   text-align: center;
+   padding: 14px;
+   text-transform: uppercase;
+   color: #666;
+}
+
+ul.topnav li a:hover {
+   background-color: #0080ff;
+   color: #fff;
+}
+
+ul.topnav li.dropDownIcon {
+   display: none;
+}
+
+footer.footsy {
+   background-color: #666;
+   padding-left: 7%;
+}
+
+footer.footsy h1 {
+   color: #fff;
+   font-size: 35px;
+}
+
+footer.footsy ul {
+   list-style: none;
+   text-align: left;
+   padding-left: 0;
+}
+
+footer.footsy ul li {
+   color: #fff;
+   font-size: 22px;
+   line-height: 1.5;
+}
+
+
+/*------------ MOBILE -------------*/
+
+@media screen and (max-width: 680px) {
+   ul.topnav li:not(:nth-child(1)) {
+      display: none;
+   }
+
+   ul.topnav li.dropDownIcon {
+      display: block;
+      float: right;
+   }
+
+   ul.topnav li.dropDownIcon {
+      position: absolute;
+      top: 0;
+      right: 0;
+   }
+
+   ul.topnav.responsive {
+      position: relative;
+   }
+
+   ul.topnav.responsive li {
+      display: inline;
+      float: none;
+   }
+
+   ul.topnav.responsive li a {
+      display: block;
+      text-align: left;
+   }
+   
+   h1.section2header {
+      font-size: 50px;
+   }
+   
+   article p {
+      font-size: 25px;
+   }
+   
+   .col-7, .col-6, .col-5, .col-4 {
+      width: 100%;
+      margin: 0;
+   }
+   
+   div.mobileStack {
+      width: 50%;
+      display: block;
+   }
+   
+   div.box {
+      padding: 5px;
+      display: block;
+   }
+   
+   div.coderIcon {
+      margin: 10px;
+   }
+   
+   div.coderIcon img {
+      width: 100%;
+   }
+   
+   div.leftSide-col, div.rightSide-col {
+      margin: 15px;
+   }
+   
+   input[type="text"] {
+      width: 350px;
+   }
+   
+   .videoContainer iframe {
+      position: relative;
+      width: 100%;
+      margin: 0;
+      overflow: hidden;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
